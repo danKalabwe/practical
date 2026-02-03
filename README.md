@@ -1,6 +1,6 @@
 # Dan Kalabwe - Portfolio Website
 
-A modern, responsive personal portfolio website built with plain HTML, CSS, and JavaScript, served by a custom Java HTTP server.
+A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Deployed on Netlify for global accessibility.
 
 ## Project Overview
 
@@ -10,8 +10,6 @@ This project showcases a professional portfolio for Dan Kalabwe, a Software Engi
 
 ```
 practical/
-├── src/
-│   └── SimpleServer.java     # Custom Java HTTP server (no frameworks)
 ├── public/
 │   ├── index.html            # Portfolio HTML structure
 │   ├── style.css             # Modern CSS styling with animations
@@ -32,22 +30,43 @@ practical/
 
 ##  Technologies Used
 
-### Backend
-- **Java** - Custom HTTP server using `com.sun.net.httpserver`
-- No frameworks or external dependencies
-
-### Frontend
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with CSS variables, gradients, and animations
 - **JavaScript** - Smooth scrolling and interactive elements
 
-## Getting Started
+## Deployment
 
-### Prerequisites
-- Java Development Kit (JDK) 8 or higher
-- A web browser
+This site is designed to be deployed on [Netlify](https://www.netlify.com/).
 
-### Compile & Run
+### Quick Deploy to Netlify
+
+1. Push this repository to GitHub
+2. Log in to [Netlify](https://app.netlify.com/)
+3. Click "Add new site" → "Import an existing project"
+4. Connect your GitHub account and select this repository
+5. Configure build settings:
+   - **Build command:** (leave empty)
+   - **Publish directory:** `public`
+6. Click "Deploy site"
+
+Your site will be live at a Netlify URL (e.g., `https://your-site-name.netlify.app`)
+
+### Local Development
+
+Simply open `public/index.html` in your web browser, or use any static server:
+
+```bash
+# Using Python
+cd public
+python3 -m http.server 8000
+
+# Using Node.js (with npx)
+cd public
+npx serve
+
+# Or just open the file directly
+open public/index.html
+```
 
 From the project root directory:
 
