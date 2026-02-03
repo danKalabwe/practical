@@ -49,7 +49,7 @@ This site is designed to be deployed on [Netlify](https://www.netlify.com/).
    - **Publish directory:** `public`
 6. Click "Deploy site"
 
-Your site will be live at a Netlify URL (e.g., `https://your-site-name.netlify.app`)
+Your site will be live at a Netlify URL (e.g., `https://dkalabweprofolio.netlify.app/`)
 
 ### Local Development
 
